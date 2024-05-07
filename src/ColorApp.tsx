@@ -11,7 +11,7 @@ import { Col, Item, Row } from './feature/UI';
 import { ColorPalette, generateId, ItemType } from './feature/ColorPalette';
 import { ColorDragOverlay } from './ColorDragOverlay.tsx';
 
-const App = () => {
+export function ColorApp() {
     const [pickerColor, setPickerColor] = useState('#09C5D0');
     const [favoriteColor, setFavoriteColor] = useState('#ddd');
 
@@ -91,6 +91,4 @@ const App = () => {
             </DndContext>
         </div>
     );
-};
-
-export default App;
+}

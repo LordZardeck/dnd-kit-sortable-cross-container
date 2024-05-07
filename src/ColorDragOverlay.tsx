@@ -13,8 +13,6 @@ export function ColorDragOverlay() {
 
     useDndMonitor({
         onDragStart({ active }) {
-            console.log('overlay', active?.data.current)
-            
             if (!active?.data.current?.color) return;
 
             document.body.style.setProperty('cursor', 'grabbing')

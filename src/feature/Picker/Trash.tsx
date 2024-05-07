@@ -25,7 +25,6 @@ export function Trash({ onChange }: TrashProps) {
 
     useDndMonitor({
         onDragStart({ active }) {
-            console.log('onDragStart', active);
             if (!active?.data.current?.color) return;
             setActiveItem({
                 id: active.id,
